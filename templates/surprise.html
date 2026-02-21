@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surprise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="glow">From the day I met you...</h1>
+
+<h2 id="confession"></h2>
+
+<hr>
+
+
+<h2>Love Calculator 💕</h2>
+<input id="name1" placeholder="His Name">
+<input id="name2" placeholder="Your Name">
+<button onclick="calculateLove()" class="love-btn">Calculate Love</button>
+<p id="result"></p>
+
+<br>
+<button onclick="location.href='/letters'" class="love-btn">
+    Open Letters 💌
+</button>
+
+
+<h2>Catch The Love 💘</h2>
+
+<div id="playerSelect">
+    <p>Who is playing? 💕</p>
+    <button onclick="startGame('dhanush')" class="love-btn">Dhanush</button>
+    <button onclick="startGame('varshini')" class="love-btn">Varshini</button>
+</div>
+
+<canvas id="loveGame" width="400" height="500" style="display:none;"></canvas>
+
+<p id="scoreBoard" style="display:none;">
+    Score: <span id="score">0</span> |
+    High Score: <span id="highScore">0</span>
+</p>
+
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

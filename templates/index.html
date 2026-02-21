@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Little Universe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="glow">Dhanush ❤️ Varshini</h1>
+
+<div id="countdown"></div>
+
+
+<button onclick="location.href='/surprise'" class="love-btn">
+    Click If You Love Me 💕
+</button>
+
+
+<!-- YouTube Style Love Video Section -->
+<div class="video-section">
+    <h2 class="video-title">Our Beautiful Memories 💖</h2>
+
+    <div class="youtube-video-wrapper">
+    <video id="loveVideo" autoplay muted loop playsinline controls>
+        <source src="{{ url_for('static', filename='video/our_video.mp4') }}" type="video/mp4">
+    </video>
+</div>
+</div>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<div class="hearts"></div>
+</body>
+</html>

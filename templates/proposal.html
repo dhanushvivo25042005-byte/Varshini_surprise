@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proposal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/proposal.css') }}">
+</head>
+
+<body class="proposal-page">
+
+<canvas id="fireworks"></canvas>
+
+<div class="proposal-container" id="proposalContainer">
+    <h1>Will You Marry Me? 💍❤️</h1>
+    <div class="buttons">
+        <button class="love-btn" id="yesBtn">YES 💖</button>
+        <button class="no-btn" id="noBtn">NO 😢</button>
+        <br>
+    </div>
+</div>
+
+<div class="final-message" id="finalMessage">
+    Vaishyas Girl Weds Reddy's Boy💍❤️
+</div>
+
+<audio id="crackerSound">
+    <source src="{{ url_for('static', filename='audio/love.mp3') }}" type="audio/mp3">
+</audio>
+
+<script src="{{ url_for('static', filename='js/fireworks.js') }}"></script>
+<script src="{{ url_for('static', filename='js/proposal.js') }}"></script>
+
+</body>
+</html>

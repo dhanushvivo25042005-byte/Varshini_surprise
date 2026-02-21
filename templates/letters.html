@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open When...</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="glow">Open When… 💌</h1>
+
+<div class="buttons">
+    <button onclick="showLetter('sad')" class="love-btn">
+        Open When You're Sad
+    </button>
+
+    <button onclick="showLetter('miss')" class="love-btn">
+        Open When You Miss Me
+    </button>
+
+    <button onclick="showLetter('angry')" class="love-btn">
+        Open When You're Angry
+    </button>
+</div>
+
+<div id="letter-content" class="letter"></div>
+
+<br>
+
+<button onclick="location.href='/proposal'" class="love-btn">
+    Final Surprise 💍
+</button>
+
+<!-- Audio Player -->
+<audio id="letter-audio"></audio>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
